@@ -1,0 +1,46 @@
+# ============================================================
+# .gitignore — Proyecto Minería de Datos (Diagnóstico Solar)
+# Inicializar Git desde esta carpeta:
+#   cd "Diagnóstico y análisis predictivo"
+#   git init
+# ============================================================
+
+# ── Archivos de datos pesados (>100 MB, límite de GitHub) ──
+data/*.csv
+data/*.parquet
+data/*.xlsx
+# Mantener la carpeta data/ visible con el placeholder
+!data/.gitkeep
+
+# ── Outputs de Python ──
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# ── Entornos virtuales ──
+venv/
+.env
+.venv/
+env/
+
+# ── Archivos de sistema ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Archivos auxiliares de compilación LaTeX ──
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+Reporte-Microservicio-ML-plantilla/main.pdf
+
+# ── Pipelines empaquetados grandes ──
+pipelines/*.joblib
+pipelines/*.pkl
